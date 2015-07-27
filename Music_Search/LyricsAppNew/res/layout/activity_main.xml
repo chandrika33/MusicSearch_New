@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Search For Lyrics"
+        android:textColor="#ffffff"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/et_term"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:hint="Search In LyricsApp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_search_lyrics"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="searchTerm"
+        android:text="GO"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>
